@@ -31,6 +31,7 @@ export default function App() {
         }}
       />
       <React.Suspense fallback={<DebugSuspenseFallback />}>
+        {/* <Data counter={deferredCounter} /> */}
         <Data counter={counter} />
       </React.Suspense>
       <StatusBar style="auto" />
