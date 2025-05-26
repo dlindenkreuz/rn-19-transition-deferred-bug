@@ -5,7 +5,7 @@ const cache = new Map();
 
 function getData(key) {
   if (cache.has(key)) {
-    return cache.get(key);
+    return React.use(cache.get(key));
   }
 
   const data = load(key);
